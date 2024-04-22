@@ -2,18 +2,18 @@
     <h1><?php echo $judul ?></h1>
     <h4>Nama</h4>
     <ul type="disc">
-        <li>Nama Depan : Imam</li>
-        <li>Nama Belakang : Nawawi</li>
+        <li>Nama Depan : Herman</li>
+        <li>Nama Belakang : Firmansyah</li>
     </ul>
     <br>
     <h4>Alamat</h4>
     <ul type="none">
-        <li> Jalan Ciledug Raya No. 168 Pesanggrahan</li>
+        <li> Purnajaya 1 jalur 2 No.28</li>
     </ul>
 
     <h4>Tempat Lahir</h4>
     <ul type="none">
-        <li>Cirebon</li>
+        <li>Teluk Pakedai</li>
     </ul>
     <h4>Olah Raga Favorit</h4>
     <ul type="square">
