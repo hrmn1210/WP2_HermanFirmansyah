@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
         <header>
             <hgroup>
                 <h1>Rental Buku Herman</h1>

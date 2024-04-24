@@ -12,7 +12,7 @@
     </ul>
 
     <h4>Tempat Lahir</h4>
-    <ul type="none">
+    <ul type="circle">
         <li>Teluk Pakedai</li>
     </ul>
     <h4>Olah Raga Favorit</h4>
