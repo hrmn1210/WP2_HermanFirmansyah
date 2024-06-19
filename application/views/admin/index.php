@@ -89,13 +89,14 @@
 
   <!-- Divider -->
   <hr class="sidebar-divider">
-
+  <?= $this->session->flashdata('pesan'); ?>
   <!-- row table-->
   <div class="row">
     <div class="table-responsive table-bordered col-sm-5 ml-auto mr-auto mt-2">
       <div class="page-header">
-        <span class="fas fa-users text-primary mt-2 "> Data User</span>
-        <a class="text-danger" href="<?php echo base_url('user/data_user'); ?>"><i class="fas fa-search mt-2 float-right"> Tampilkan</i></a>
+        <span class="fas fa-users text-primary mt-2 "> Data
+          User</span>
+        <a class="text-danger" href="<?php echo base_url('user/anggota'); ?>"><i class="fas fa-search mt-2 float-right"> Tampilkan</i></a>
       </div>
       <table class="table mt-3">
         <thead>
@@ -108,6 +109,7 @@
             <th>Member Sejak</th>
           </tr>
         </thead>
+
         <tbody>
           <?php
           $i = 1;
@@ -124,11 +126,10 @@
         </tbody>
       </table>
     </div>
-
-
     <div class="table-responsive table-bordered col-sm-5 ml-auto mr-auto mt-2">
       <div class="page-header">
-        <span class="fas fa-book text-warning mt-2"> Data Buku</span>
+        <span class="fas fa-book text-warning mt-2"> Data
+          Buku</span>
         <a href="<?= base_url('buku'); ?>"><i class="fas fa-search text-primary mt-2 float-right"> Tampilkan</i></a>
       </div>
       <div class="table-responsive">
@@ -147,7 +148,8 @@
           <tbody>
             <?php
             $i = 1;
-            foreach ($buku as $b) { ?>
+            foreach ($buku as $b) :
+            ?>
               <tr>
                 <td><?= $i++; ?></td>
                 <td><?= $b['judul_buku']; ?></td>
@@ -157,18 +159,14 @@
                 <td><?= $b['isbn']; ?></td>
                 <td><?= $b['stok']; ?></td>
               </tr>
-            <?php } ?>
+            <?php endforeach; ?>
           </tbody>
         </table>
       </div>
     </div>
-
-
   </div>
   <!-- end of row table-->
-
 </div>
 <!-- /.container-fluid -->
-
 </div>
 <!-- End of Main Content -->
